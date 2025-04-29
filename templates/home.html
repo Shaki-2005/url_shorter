@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Shorten Your URL</h2>
+<form method="POST">
+  <div class="mb-3">
+    <label for="original_url" class="form-label">Enter Original URL</label>
+    <input type="url" name="original_url" id="original_url" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Shorten</button>
+</form>
+{% endblock %}
